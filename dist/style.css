@@ -148,7 +148,6 @@ a {
 nav a,
 .socials a {
   position: relative;
-  display: flex;
 }
 nav a::after,
 .socials a::after {
