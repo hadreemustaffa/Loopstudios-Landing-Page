@@ -1,0 +1,22 @@
+@use "../abstract" as *;
+
+.active {
+  background-color: $clr-primary-black;
+  padding: 1rem 2rem;
+}
+
+.visually-hidden {
+  opacity: 0;
+}
+
+@include md {
+  .active {
+    padding: 1rem clamp(2rem, -7.1429rem + 19.0476vw, 10rem);
+  }
+}
+
+@include xl {
+  .active {
+    padding: 1rem clamp(10rem, -8.6567rem + 23.8806vw, 20rem);
+  }
+}

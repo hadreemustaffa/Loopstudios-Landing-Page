@@ -5,20 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Loopstudios Landing Page solution for frontendmentor.io">
-
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-
   <title>FEM | Loopstudios Landing Page</title>
+
+  <link rel="stylesheet" href="dist/style.css">
+  <script defer src="index.js"></script>
 </head>
 
 <body>
   <header>
     <a href="#">
-      <img src="images/logo.svg" alt="Loopstudios brand logo">
+      <img class="logo" src="images/logo.svg" alt="Loopstudios brand logo">
     </a>
 
     <nav aria-label="primary-nav">
-      <button type="button" aria-expanded="false" aria-controls="mainMenu">
+      <button id="menuBtn" type="button" aria-expanded="false" aria-controls="mainMenu">
         <img src="images/icon-hamburger.svg" alt="">
       </button>
 
@@ -52,164 +53,180 @@
             Support
           </a>
         </li>
-
       </ul>
     </nav>
   </header>
 
   <main>
     <div class="hero">
-      <picture>
-        <source media="(max-width: 767px)" srcset="images/mobile/image-hero.webp">
-        <source media="(min-width: 768px)" srcset="images/desktop/image-hero.webp">
-        <img src="images/mobile/image-hero.webp" alt="">
-      </picture>
       <h1>Immersive experiences that deliver</h1>
+      <picture>
+        <source media="(max-width: 767px)" srcset="images/mobile/webp/image-hero.webp" type="image/webp">
+        <source media="(min-width: 768px)" srcset="images/desktop/webp/image-hero.webp" type="image/webp">
+        <img src="images/mobile/jpg/image-hero.jpg" alt="image of a person in VR racing gaming rig">
+      </picture>
+
     </div>
 
-    <div class="brief-history">
-      <h2>The leader in interactive VR</h2>
-      <p>
-        Founded in 2011, Loopstudios has been producing world-class virtual reality
-        projects for some of the best companies around the globe. Our award-winning
-        creations have transformed businesses through digital experiences that bind
-        to their brand.
-      </p>
+    <div class="history">
+      <picture>
+        <source media="(max-width: 767px)" srcset="images/mobile" type="image/mobile/webp/image-interactive.webp">
+        <source media="(min-width: 768px)" srcset="images/desktop/webp/image-interactive.webp" type="image/webp">
+        <img src="images/mobile/jpg/image-interactive.jpg" alt="image of a man with virtual reality goggle">
+      </picture>
+      <div class="history__text-container">
+        <h2>The leader in interactive VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.
+        </p>
+      </div>
     </div>
 
     <div class="projects">
-      <h2>Our creations</h2>
+      <div class="projects__title">
+        <h2>Our creations</h2>
+        <button class="see-all" type="button">See all</button>
+      </div>
 
       <ul class="projects__list">
         <li class="projects__list-container">
-          <a href="#">Deep earth</a>
+          <a href="#">Deep <span>earth</span></a>
           <picture>
-            <source media="(max-width: 767px)" srcset="images/mobile/image-deep-earth.webp">
-            <source media="(min-width: 768px)" srcset="images/desktop/image-deep-earth.webp">
-            <img src="images/mobile/image-deep-earth.webp" alt="">
+            <source media="(max-width: 767px)" srcset="images/mobile/webp/image-deep-earth.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/desktop/webp/image-deep-earth.webp" type="image/webp">
+            <img src="images/mobile/jpg/image-deep-earth.jpg" alt="image of planet earth">
           </picture>
         </li>
 
         <li class="projects__list-container">
-          <a href="#">Night arcade</a>
+          <a href="#">Night <span>arcade</span></a>
           <picture>
-            <source media="(max-width: 767px)" srcset="images/mobile/image-night-arcade.webp">
-            <source media="(min-width: 768px)" srcset="images/desktop/image-night-arcade.webp">
-            <img src="images/mobile/image-night-arcade.webp" alt="">
+            <source media="(max-width: 767px)" srcset="images/mobile/webp/image-night-arcade.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/desktop/webp/image-night-arcade.webp" type="image/webp">
+            <img src="images/mobile/jpg/image-night-arcade.jpg" alt="image of an arcade machine">
           </picture>
         </li>
 
         <li class="projects__list-container">
-          <a href="#">Soccer team VR</a>
+          <a href="#">Soccer <span>team VR</span></a>
           <picture>
-            <source media="(max-width: 767px)" srcset="images/mobile/image-soccer-team.webp">
-            <source media="(min-width: 768px)" srcset="images/desktop/image-soccer-team.webp">
-            <img src="images/mobile/image-soccer-team.webp" alt="">
+            <source media="(max-width: 767px)" srcset="images/mobile/webp/image-soccer-team.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/desktop/webp/image-soccer-team.webp" type="image/webp">
+            <img src="images/mobile/jpg/image-soccer-team.jpg" alt="image of a soccer player in red jersey">
           </picture>
         </li>
 
         <li class="projects__list-container">
-          <a href="#">The grid</a>
+          <a href="#">The <span>grid</span></a>
           <picture>
-            <source media="(max-width: 767px)" srcset="images/mobile/image-grid.webp">
-            <source media="(min-width: 768px)" srcset="images/desktop/image-grid.webp">
-            <img src="images/mobile/image-grid.webp" alt="">
+            <source media="(max-width: 767px)" srcset="images/mobile/webp/image-grid.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/desktop/webp/image-grid.webp" type="image/webp">
+            <img src="images/mobile/jpg/image-grid.jpg" alt="image of race car">
           </picture>
         </li>
 
         <li class="projects__list-container">
-          <a href="#">From up above VR</a>
+          <a href="#">From up <span>above VR</span></a>
           <picture>
-            <source media="(max-width: 767px)" srcset="images/mobile/image-from-above.webp">
-            <source media="(min-width: 768px)" srcset="images/desktop/image-from-above.webp">
-            <img src="images/mobile/image-from-above.webp" alt="">
+            <source media="(max-width: 767px)" srcset="images/mobile/webp/image-from-above.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/desktop/webp/image-from-above.webp" type="image/webp">
+            <img src="images/mobile/jpg/image-from-above.jpg" alt="image of hill road drone shot">
           </picture>
         </li>
 
         <li class="projects__list-container">
-          <a href="#">Pocket borealis</a>
+          <a href="#">Pocket <span>borealis</span></a>
           <picture>
-            <source media="(max-width: 767px)" srcset="images/mobile/image-pocket-borealis.webp">
-            <source media="(min-width: 768px)" srcset="images/desktop/image-pocket-borealis.webp">
-            <img src="images/mobile/image-pocket-borealis.webp" alt="">
+            <source media="(max-width: 767px)" srcset="images/mobile/webp/image-pocket-borealis.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/desktop/webp/image-pocket-borealis.webp"
+              type="image/webp">
+            <img src="images/mobile/jpg/image-pocket-borealis.jpg" alt="image of aurora borealis">
           </picture>
         </li>
 
         <li class="projects__list-container">
-          <a href="#">The curiosity</a>
+          <a href="#">The <span>curiosity</span></a>
           <picture>
-            <source media="(max-width: 767px)" srcset="images/mobile/image-curiosity.webp">
-            <source media="(min-width: 768px)" srcset="images/desktop/image-curiosity.webp">
-            <img src="images/mobile/image-curiosity.webp" alt="">
+            <source media="(max-width: 767px)" srcset="images/mobile/webp/image-curiosity.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/desktop/webp/image-curiosity.webp" type="image/webp">
+            <img src="images/mobile/jpg/image-curiosity.jpg" alt="image of the curiosity mars rover">
           </picture>
         </li>
 
         <li class="projects__list-container">
-          <a href="#">Make it fisheye</a>
+          <a href="#">Make it <span>fisheye</span></a>
           <picture>
-            <source media="(max-width: 767px)" srcset="images/mobile/image-fisheye.webp">
-            <source media="(min-width: 768px)" srcset="images/desktop/image-fisheye.webp">
-            <img src="images/mobile/image-fisheye.webp" alt="">
+            <source media="(max-width: 767px)" srcset="images/mobile/webp/image-fisheye.webp" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/desktop/webp/image-fisheye.webp" type="image/webp">
+            <img src="images/mobile/jpg/image-fisheye.jpg" alt="image of a fisheye effect">
           </picture>
         </li>
       </ul>
 
-      <button type="button">See all</button>
     </div>
-
   </main>
 
   <footer>
-    <a href="#">
-      <img src="images/logo.svg" alt="Loopstudios brand logo">
-    </a>
+    <div class="wrapper">
+      <a href="#">
+        <img class="logo" src="images/logo.svg" alt="Loopstudios brand logo">
+      </a>
 
-    <nav aria-label="secondary-nav">
-      <ul>
-        <li>
-          <a href="#">
-            About
-          </a>
-        </li>
+      <nav aria-label="secondary-nav">
+        <ul>
+          <li>
+            <a href="#">
+              About
+            </a>
+          </li>
 
-        <li>
-          <a href="#">
-            Careers
-          </a>
-        </li>
+          <li>
+            <a href="#">
+              Careers
+            </a>
+          </li>
 
-        <li>
-          <a href="#">
-            Events
-          </a>
-        </li>
+          <li>
+            <a href="#">
+              Events
+            </a>
+          </li>
 
-        <li>
-          <a href="#">
-            Products
-          </a>
-        </li>
+          <li>
+            <a href="#">
+              Products
+            </a>
+          </li>
 
-        <li>
-          <a href="#">
-            Support
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="socials">
-      <img src="images/icon-facebook.svg" alt="">
-      <img src="images/icon-twitter.svg" alt="">
-      <img src="images/icon-pinterest.svg" alt="">
-      <img src="images/icon-twitter.svg" alt="">
+          <li>
+            <a href="#">
+              Support
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-    <p>© 2021 Loopstudios. All rights reserved.</p>
+    <div class="wrapper">
+      <div class="socials">
+        <a href="#">
+          <img src="images/icon-facebook.svg" alt="facebook icon">
+        </a>
+        <a href="#">
+          <img src="images/icon-twitter.svg" alt="twitter icon">
+        </a>
+        <a href="#">
+          <img src="images/icon-pinterest.svg" alt="pinterest icon">
+        </a>
+        <a href="#">
+          <img src="images/icon-instagram.svg" alt="instagram icon">
+        </a>
+      </div>
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      <p>© 2021 Loopstudios. All rights reserved.</p>
     </div>
   </footer>
 </body>

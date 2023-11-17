@@ -1,0 +1,15 @@
+$ff-primary: "Josefin Sans", sans-serif;
+$ff-secondary: "Alata", sans-serif;
+
+$fw-regular: 400;
+$fw-light: 300;
+
+$fs-xl: clamp(2.5rem, 0.2143rem + 4.7619vw, 4.5rem);
+$fs-lg: clamp(2rem, 0.4066rem + 3.3195vw, 3rem);
+$fs-md: 1.75rem;
+$fs-sm: 1rem;
+
+$ff-heading: $ff-primary;
+$ff-body: $ff-secondary;
+
+$fs-heading-1: $fs-xl;

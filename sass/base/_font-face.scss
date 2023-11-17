@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Alata";
+  font-weight: 400;
+  src:
+    local("Alata"),
+    url("./fonts/alata-regular-webfont.woff2") format("woff2"),
+    url("./fonts/alata-regular-webfont.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  src:
+    local("Josefin Sans"),
+    url("./fonts/josefinsans-light-webfont.woff2") format("woff2"),
+    url("./fonts/josefinsans-light-webfont.woff") format("woff");
+  font-display: swap;
+}

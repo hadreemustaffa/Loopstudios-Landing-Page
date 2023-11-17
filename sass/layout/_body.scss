@@ -1,0 +1,7 @@
+@use "../abstract/" as *;
+
+body {
+  background-color: $clr-primary-white;
+  overflow: hidden scroll;
+  margin: 0;
+}
